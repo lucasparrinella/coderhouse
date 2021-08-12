@@ -2,10 +2,24 @@ $colorpink: rgb(243, 194, 203);
 $colorblue: aliceblue;
 $font: 32px;
 $img-width: 85px;
+
 @mixin smedia-sizes {
         width: 30px;
         height: auto;
+} 
+
+$redes: (
+        niños: #55acee,
+        niñas:  #bd6dc0,
+        bebes: #C25E30
+); 
+
+@each $red, $color in $redes {
+   .card-body--#{$red} {
+       background-color: $color;
+   }
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 
@@ -198,6 +212,17 @@ footer {
     justify-content: center;
     margin-left: 25%;
     margin-right: 25%;
+}
+
+.navBreadcrumb {
+    display: flex;
+    justify-content: center;
+}
+
+.breadcrumb {
+    padding-top: 100px;
+    text-decoration: none;
+    list-style: none;
 }
 
 /* PRODUCTOS.html */
@@ -398,6 +423,14 @@ input[type=submit]:hover {
         }
     }
 
+    .footer {
+        width: 100%;
+    }
+
+    .body {
+        width: 100%;
+    }
+
     .footermedia {
         text-align: center;
         img {
@@ -420,6 +453,26 @@ input[type=submit]:hover {
     
     .iframe {
         display: none;
+    }
+
+    .indexBuscador {
+        display: none;
+    }
+
+    .buscador {
+        display: none;
+    }
+
+    .btnBuscador {
+        display: none;
+    }
+
+    .newproduct {
+        display: none;
+    }
+
+    .galeria {
+        width: 80%;
     }
 }
 
@@ -467,4 +520,23 @@ input[type=submit]:hover {
         display: none;
     }
 
+    .indexBuscador {
+        display: none;
+    }
+
+    .buscador {
+        display: none;
+    }
+
+    .btnBuscador {
+        display: none;
+    }
+
+    .newproduct {
+        display: none;
+    }
+
+    .galeria {
+        width: 80%;
+    }
 }
