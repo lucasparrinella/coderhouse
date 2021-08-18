@@ -229,20 +229,31 @@ footer {
 
 .productosRopaContainer {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    padding-top: 150px;
-    p {
-        font-size: 1.7rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.productosRopaContainerNiños {
+    justify-content: center;
+    text-align: center;
+    border-top: solid;
+    border-width: 1px;
+    .cards {
+        padding-top: 20px;
+    }
+}
+
+.Ropa-Para-Niños {
+    font-size: 1.7rem;
+        padding-top: 25px;
         padding-bottom: 5px;
         padding-left: 5px;
         color: rgb(138, 8, 131);
         text-align: center;
-    }
 }
 
-.productosRopaContainer__ropaNiños {
+/*.productosRopaContainer__ropaNiños {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -291,7 +302,7 @@ footer {
         height: auto;
         padding: 5px 5px;
     }
-}
+}*/
 
 /* CONTACTO */
 

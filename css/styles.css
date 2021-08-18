@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
 .card-body--niños {
-  background-color: #FF2D00; }
+  background-color: #55acee; }
 
 .card-body--niñas {
-  background-color: #FF00BD; }
+  background-color: #bd6dc0; }
 
 .card-body--bebes {
-  background-color: #7A90FE; }
+  background-color: #C25E30; }
 
 * {
   box-sizing: border-box;
@@ -171,62 +171,76 @@ footer {
 /* PRODUCTOS.html */
 .productosRopaContainer {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  padding-top: 150px; }
-  .productosRopaContainer p {
-    font-size: 1.7rem;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    color: #8a0883;
-    text-align: center; }
+  text-align: center;
+  justify-content: center; }
 
-.productosRopaContainer__ropaNiños {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+.productosRopaContainerNiños {
+  justify-content: center;
+  text-align: center;
   border-top: solid;
-  border-width: 1px;
-  width: 100%;
-  padding-bottom: 20px;
-  padding-top: 5px; }
-  .productosRopaContainer__ropaNiños img {
-    width: 170px;
-    height: auto;
-    padding: 5px 5px; }
+  border-width: 1px; }
+  .productosRopaContainerNiños .cards {
+    padding-top: 20px; }
+
+.Ropa-Para-Niños {
+  font-size: 1.7rem;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  color: #8a0883;
+  text-align: center; }
+
+/*.productosRopaContainer__ropaNiños {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-top: solid;
+    border-width: 1px;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    img {
+        width: $img-width*2;
+        height: auto;
+        padding: 5px 5px;
+    }
+}
 
 .productosRopaContainer__ropaNiñas {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  border-top: solid;
-  border-width: 1px;
-  width: 100%;
-  padding-bottom: 20px;
-  padding-top: 5px; }
-  .productosRopaContainer__ropaNiñas img {
-    width: 170px;
-    height: auto;
-    padding: 5px 5px; }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-top: solid;
+    border-width: 1px;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    img {
+        width: $img-width*2;
+        height: auto;
+        padding: 5px 5px;
+    }
+}
 
 .productosRopaContainer__ropaBebes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  border-top: solid;
-  border-width: 1px;
-  width: 100%;
-  padding-bottom: 0px;
-  padding-top: 5px; }
-  .productosRopaContainer__ropaBebes img {
-    width: 170px;
-    height: auto;
-    padding: 5px 5px; }
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-top: solid;
+    border-width: 1px;
+    width: 100%;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    img {
+        width: $img-width*2;
+        height: auto;
+        padding: 5px 5px;
+    }
+}*/
 /* CONTACTO */
 input[type=text], select, textarea {
   width: 100%;
