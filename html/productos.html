@@ -14,20 +14,33 @@
 
     <!--Header + Nav-->
 
-    <header>
-
-        <h1 class="header__caro">CARO<span class="header__bambino">BAMBINO</span></h1>
-
-        <nav>
-            <ul class="nav__links">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../html/productos.html">PRODUCTOS</a></li>
-                <li><a href="../html/contacto.html">CONTACTO</a></li>
-                <li><a href="../html/comollegar.html">COMO LLEGAR</a></li>
-                <li><a href="../html/mas.html">MÁS</a></li>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a href="../index.html" class="navbar-brand"><h1 class="header__caro">CARO<span class="header__bambino">BAMBINO</span></h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="#toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav ms-auto text-center nav_list">
+              <li>
+                <a class="nav_list" href="../index.html" class="nav-link">Inicio</a>
+              </li>
+              <li>
+                <a class="nav_list" href="./productos.html" class="nav-link" id="activo">Productos</a>
+              </li>
+              <li>
+                <a class="nav_list" href="./comollegar.html" class="nav-link">Como llegar</a>
+              </li>
+              <li>
+                <a class="nav_list" href="./contacto.html" class="nav-link">Contacto</a>
+              </li>
+              <li>
+                <a class="nav_list" href="./mas.html" class="nav-link">Más</a>
+              </li>
             </ul>
+          </div>
         </nav>
-    </header>
+      </header>
 
  <!--Las imagenes no son las que van a ir, son una representacion-->
 
