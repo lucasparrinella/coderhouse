@@ -1,14 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
-.card-body--niños {
-  background-color: #55acee; }
-
-.card-body--niñas {
-  background-color: #bd6dc0; }
-
-.card-body--bebes {
-  background-color: #C25E30; }
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,7 +9,7 @@ body {
   background-color: white;
   font-family: 'Yomogi', cursive; }
 
-/* Font properties */
+/* HEADER + NAV */
 .nav_list {
   color: black;
   font-weight: bold;
@@ -28,12 +19,12 @@ body {
   border-radius: 30px;
   padding: 10px 10px; }
   .nav_list:hover {
-    color: #f3c2cb; }
+    color: #f3c2cb;
+    transition: linear 0.3s; }
 
 #activo {
   color: #f3c2cb; }
 
-/* HEADER + NAV PROPERTIES */
 header {
   display: flex;
   width: 100%;
@@ -51,7 +42,6 @@ header {
   cursor: pointer; }
 
 /* TERMINA LOGO */
-/*NAV BAR*/
 .navbar {
   width: 100%; }
 
@@ -68,21 +58,6 @@ header {
   cursor: pointer;
   color: black; }
 
-.buscador {
-  width: 100px;
-  height: 50px; }
-
-.btn-search {
-  border-color: #f3c2cb;
-  color: #f3c2cb;
-  height: 50px; }
-
-.btn-search:hover {
-  border-color: #f3c2cb;
-  color: black;
-  background-color: #f3c2cb; }
-
-/* TERMINA NAV BAR*/
 /* BODY */
 .container__img {
   display: flex;
@@ -98,78 +73,108 @@ header {
   margin: auto;
   padding-top: 40px; }
 
+.card-title {
+  font-weight: bold; }
+
+.botonCard {
+  background-color: #f3c2cb;
+  border: none;
+  font-weight: bold; }
+  .botonCard:hover {
+    background-color: #ff006a;
+    color: white;
+    transition: linear 0.5s; }
+
 .card__productos {
   display: flex;
-  justify-content: center; }
-
-footer {
-  margin-top: 10%;
-  display: flex;
-  padding-top: 2%;
-  width: 100%;
-  border-top: 0.5px solid;
-  background: aliceblue; }
-
-.footermedia {
-  text-align: center;
-  background: aliceblue;
-  padding-left: 3%; }
-  .footermedia img {
-    width: 30px;
-    height: auto;
-    background: aliceblue; }
-
-.footermedia p {
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-  text-decoration: none;
-  border: none;
-  border-radius: 30px;
-  padding: 10px 10px;
-  background: aliceblue; }
-
-.fastlinks {
-  width: 100%;
-  padding-right: 5px;
-  text-align: right;
-  padding-right: 3%;
-  background: aliceblue;
-  padding-top: 0px; }
-  .fastlinks li {
-    padding: 15px 5px;
-    list-style: none;
-    background: aliceblue; }
-    .fastlinks li a {
-      text-decoration: none;
-      cursor: pointer;
-      background: aliceblue;
-      border-radius: 30px;
-      padding: 10px 10px; }
-
-.fastlinks__a li a:hover {
-  transition: all 0.5s ease-in-out;
-  background: #f3c2cb; }
-
-.iframe {
-  background: aliceblue; }
-
-.iframe iframe {
-  width: 600px;
-  height: 200px;
   justify-content: center;
-  margin-left: 25%;
-  margin-right: 25%; }
+  padding-bottom: 5px; }
 
-.navBreadcrumb {
+/* BREADCRUMB */
+.breadCrumbs {
+  justify-content: center;
+  text-align: center; }
+  .breadCrumbs ol {
+    justify-content: center; }
+    .breadCrumbs ol li {
+      text-align: center;
+      padding-top: 40px; }
+      .breadCrumbs ol li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black; }
+        .breadCrumbs ol li a:hover {
+          color: #f3c2cb;
+          transition: linear 0.3s; }
+
+/* FOOTER */
+footer {
   display: flex;
-  justify-content: center; }
+  width: 100%;
+  background: #0e0d0d;
+  justify-content: space-around;
+  text-align: center;
+  height: 70px;
+  margin-top: 40px; }
 
-.breadcrumb {
-  padding-top: 100px;
-  text-decoration: none;
-  list-style: none; }
+@media (max-width: 600px) {
+  .footerinstagram {
+    font-size: 13px; }
+    .footerinstagram a img {
+      width: 25px;
+      height: 25px; }
+  .footerfacebook {
+    font-size: 13px; }
+    .footerfacebook a img {
+      width: 25px;
+      height: 25px; }
+  .footerwhatsapp {
+    font-size: 13px; }
+    .footerwhatsapp a img {
+      width: 25px;
+      height: 25px; } }
+
+.footerinstagram {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto; }
+  .footerinstagram img {
+    width: 30px;
+    height: 30px; }
+    .footerinstagram img:hover {
+      transition: linear 0.2s;
+      opacity: 20%; }
+  .footerinstagram p {
+    color: #f3c2cb; }
+
+.footerfacebook {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto; }
+  .footerfacebook img {
+    width: 30px;
+    height: 30px; }
+    .footerfacebook img:hover {
+      transition: linear 0.2s;
+      opacity: 20%; }
+  .footerfacebook p {
+    color: #f3c2cb; }
+
+.footerwhatsapp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto; }
+  .footerwhatsapp img {
+    width: 30px;
+    height: 30px; }
+    .footerwhatsapp img:hover {
+      transition: linear 0.2s;
+      opacity: 20%; }
+  .footerwhatsapp p {
+    color: #f3c2cb; }
 
 /* PRODUCTOS.html */
 .productosRopaContainer {
@@ -221,11 +226,16 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: white;
   padding: 20px;
-  padding-top: 130px; }
+  padding-top: 30px;
+  font-weight: bold; }
+  .formContainer h3 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-weight: bold; }
 
 /* COMO LLEGAR */
+/*IFRAME*/
 .iframeContainer {
-  padding-top: 115px;
   text-align: center;
   justify-content: center; }
   .iframeContainer h1 {
@@ -233,12 +243,11 @@ input[type=submit]:hover {
 
 .iframeContainer p {
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 15px;
   font-weight: bold; }
 
 /* MÁS */
 .galeria {
-  padding-top: 150px;
+  padding-top: 30px;
   justify-content: center;
   align-content: center;
   width: 100%;
@@ -250,8 +259,13 @@ input[type=submit]:hover {
     width: 100%;
     padding: 10px; }
 
-/*TRANSFORM EN :hover PARA LA ENTREGA*/
-.galeria div img:hover {
-  transform: scale(1); }
-
-/* MEDIA QUERIES */
+.breadCrumbs {
+  display: inline; }
+  .breadCrumbs ul {
+    list-style: none; }
+    .breadCrumbs ul li a {
+      text-decoration: none;
+      color: black; }
+      .breadCrumbs ul li a:hover {
+        color: #f3c2cb;
+        transition: linear 0.3s; }

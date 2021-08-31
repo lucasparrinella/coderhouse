@@ -3,25 +3,8 @@ $colorblue: aliceblue;
 $font: 32px;
 $img-width: 85px;
 
-@mixin smedia-sizes {
-        width: 30px;
-        height: auto;
-} 
-
-$redes: (
-        niños: #55acee,
-        niñas:  #bd6dc0,
-        bebes: #C25E30
-); 
-
-@each $red, $color in $redes {
-   .card-body--#{$red} {
-       background-color: $color;
-   }
-}
-
-
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -34,7 +17,7 @@ body {
     font-family: 'Yomogi', cursive;
 }
 
-/* Font properties */
+/* HEADER + NAV */
 
     .nav_list {
             color: rgb(0, 0, 0);
@@ -46,14 +29,13 @@ body {
             padding: 10px 10px;
                 &:hover {
                     color: $colorpink;
+                    transition: linear 0.3s;
                 }
         }
 
     #activo {
         color: $colorpink;
     }
-
-/* HEADER + NAV PROPERTIES */
 
 header {
     display: flex;
@@ -77,8 +59,6 @@ header {
 
 /* TERMINA LOGO */
 
-/*NAV BAR*/
-
 .navbar {
     width: 100%;
 }
@@ -100,25 +80,6 @@ header {
     color: black;
 }
 
-.buscador {
-    width: 100px;
-    height: 50px;
-}
-
-.btn-search {
-    border-color:$colorpink;
-    color: $colorpink;
-    height: 50px;
-}
-
-.btn-search:hover {
-    border-color:$colorpink;
-    color: black;
-    background-color: $colorpink;
-}
-
-/* TERMINA NAV BAR*/
-
 /* BODY */
 
 .container__img {
@@ -138,91 +99,146 @@ header {
     padding-top: 40px;
 }
 
+.card-title {
+    font-weight: bold;
+}
+
+.botonCard {
+    background-color: $colorpink;
+    border: none;
+    font-weight: bold;
+        &:hover {
+            background-color: rgb(255, 0, 106);
+            color: white;
+            transition: linear 0.5s;
+        }
+}
+
 .card__productos {
     display: flex;
     justify-content: center;
+    padding-bottom: 5px;
 }
+
+/* BREADCRUMB */
+
+.breadCrumbs {
+    justify-content: center;
+    text-align: center;
+        ol {
+            justify-content: center;
+            li {
+                text-align: center;
+                padding-top: 40px;
+                a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: rgb(0, 0, 0);
+                        &:hover {
+                            color: $colorpink;
+                            transition: linear 0.3s;
+                        }
+                }
+            }
+        }
+}
+
+/* FOOTER */
 
 footer {
-    margin-top: 10%;
     display: flex;
-    padding-top: 2%;
     width: 100%;
-    border-top: 0.5px solid;
-    background: $colorblue;
-}
-
-.footermedia {
+    background: rgb(14, 13, 13);
+    justify-content: space-around;
     text-align: center;
-    background: $colorblue;
-    padding-left: 3%;
-    img {
-        @include smedia-sizes;
-        background: $colorblue;
+    height: 70px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .footerinstagram {
+        font-size: 13px;
+            a {
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+    }
+
+    .footerfacebook {
+        font-size: 13px;
+            a {
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+    }
+
+    .footerwhatsapp {
+        font-size: 13px;
+            a {
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
     }
 }
 
-.footermedia {
-    p {
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-        font-weight: bold;
-        font-size: $font/2;
-        text-decoration: none;
-        border: none;
-        border-radius: 30px;
-        padding: 10px 10px;
-        background: $colorblue;
-    }
-}
-
-.fastlinks {
-    width: 100%;
-    padding-right: 5px;
-    text-align: right;
-    padding-right: 3%;
-    background: $colorblue;
-    padding-top: 0px;
-    li {
-        padding: 15px 5px;
-        list-style: none;
-        background: $colorblue;
-        a {
-            text-decoration: none;
-            cursor: pointer;
-            background: $colorblue;
-            border-radius: 30px;
-            padding: 10px 10px;
-        }
-    }
-}
-
-.fastlinks__a li a:hover {
-    transition: all 0.5s ease-in-out;
-    background: $colorpink;
-}
-
-.iframe {
-    background: $colorblue;
-}
-
-.iframe iframe{
-    width: 600px;
-    height: 200px;
-    justify-content: center;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-.navBreadcrumb {
+.footerinstagram {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto;
+        img {
+            width: 30px;
+            height: 30px;
+                &:hover {
+                    transition: linear 0.2s;
+                    opacity: 20%;
+                }
+        }
+        p {
+            color: $colorpink;
+        }
 }
 
-.breadcrumb {
-    padding-top: 100px;
-    text-decoration: none;
-    list-style: none;
+.footerfacebook {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto;
+        img {
+            width: 30px;
+            height: 30px;
+                &:hover {
+                transition: linear 0.2s;
+                opacity: 20%;
+            }
+        }
+        p {
+            color: $colorpink;
+        }
+}
+
+.footerwhatsapp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto;
+        img {
+            width: 30px;
+            height: 30px;
+                &:hover {
+                transition: linear 0.2s;
+                opacity: 20%;
+            }
+        }
+        p {
+            color: $colorpink;
+        }
 }
 
 /* PRODUCTOS.html */
@@ -284,13 +300,22 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: white;
     padding: 20px;
-    padding-top: 130px;
+    padding-top: 30px;
+    font-weight: bold;
+        h3 {
+            text-align: center;
+            padding-bottom: 30px;
+            font-weight: bold;
+        }
   }
 
   /* COMO LLEGAR */
 
+
+
+/*IFRAME*/
+
 .iframeContainer {
-    padding-top: 115px;
     text-align: center;
     justify-content: center;
     h1 {
@@ -300,14 +325,13 @@ input[type=submit]:hover {
 
 .iframeContainer p {
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 15px;
     font-weight: bold;
 }
 
 /* MÁS */
 
 .galeria {
-    padding-top: 150px;
+    padding-top: 30px;
     justify-content: center;
     align-content: center;
     width: 100%;
@@ -323,10 +347,19 @@ input[type=submit]:hover {
     }
 }
 
-/*TRANSFORM EN :hover PARA LA ENTREGA*/
-
-.galeria div img:hover {
-    transform: scale(1);
+.breadCrumbs {
+    display: inline;
+        ul {
+            list-style: none;
+                li {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                            &:hover {
+                                color: $colorpink;
+                                transition: linear 0.3s;
+                            }
+                    }
+                }
+        }
 }
-
-/* MEDIA QUERIES */ 
