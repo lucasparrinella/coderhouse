@@ -49,10 +49,11 @@ header {
     color: black;
     font-size: ($font)-4px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .header__bambino {
-    color: $colorpink;
+    color: #FF0051;
     font-size: ($font)-4px;
     cursor: pointer;
 }

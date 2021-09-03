@@ -34,10 +34,11 @@ header {
 .header__caro {
   color: black;
   font-size: 28px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: bold; }
 
 .header__bambino {
-  color: #f3c2cb;
+  color: #FF0051;
   font-size: 28px;
   cursor: pointer; }
 
