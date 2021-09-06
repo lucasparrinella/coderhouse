@@ -33,7 +33,7 @@ body {
                 }
         }
 
-    #activo {
+    .activo {
         color: $colorpink;
     }
 
@@ -244,30 +244,97 @@ footer {
 
 /* PRODUCTOS.html */
 
-.productosRopaContainer {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-}
-
-.productosRopaContainerNiños {
+.productosNiños {
+    width: 100%;
+    margin: auto;
     justify-content: center;
     text-align: center;
-    border-top: solid;
-    border-width: 1px;
-    .cards {
-        padding-top: 20px;
-    }
+    border-top: black solid 1px;
+        .card {
+            margin: 10px;
+                .btn {
+                    background-color: green;
+                    border: none;
+                        &:hover {
+                            transition: linear 0.2s;
+                            background-color: rgb(2, 172, 2);
+                        }
+                }
+                p {
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+        }
 }
 
-.Ropa-Para-Niños {
-    font-size: 1.7rem;
-        padding-top: 25px;
-        padding-bottom: 5px;
-        padding-left: 5px;
-        color: rgb(138, 8, 131);
-        text-align: center;
+.ropaParaNiños {
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(204, 5, 5);
+    font-weight: bold;
+}
+
+.productosNiñas {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    border-top: black solid 1px;
+        .card {
+            margin: 10px;
+                .btn {
+                    background-color: green;
+                    border: none;
+                        &:hover {
+                            transition: linear 0.2s;
+                            background-color: rgb(2, 172, 2);
+                        }
+                }
+                p {
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+        }
+}
+
+.ropaParaNiñas {
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(204, 5, 194);
+    font-weight: bold;
+}
+
+.productosBebes {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    border-top: black solid 1px;
+        .card {
+            margin: 10px;
+                .btn {
+                    background-color: green;
+                    border: none;
+                        &:hover {
+                            transition: linear 0.2s;
+                            background-color: rgb(2, 172, 2);
+                        }
+                }
+                p {
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+        }
+}
+
+.ropaParaBebes {
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(25, 5, 204);
+    font-weight: bold;
 }
 
 /* CONTACTO */
@@ -324,6 +391,12 @@ input[type=submit]:hover {
     }
 }
 
+@media (max-width: 600px) {
+    iframe {
+        width: 95%;
+    }
+}
+
 .iframeContainer p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -331,21 +404,80 @@ input[type=submit]:hover {
 
 /* MÁS */
 
-.galeria {
-    padding-top: 30px;
-    justify-content: center;
-    align-content: center;
+.informacion1 {
+    display: flex;
     width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4,200px);
-    grid-template-rows: repeat(4,200px);
-    div {
-        img {
-            width: 100%;
-            padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    justify-content: center;
+    text-align: center;
+    background-color: $colorpink;
+    border-radius: 100%;
+        .imagenInfo1 {
+            img {
+                width: 300px;
+                height: auto;
+                border-radius: 10%;
+            }
         }
-    }
+        .textoInfo1 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 65%;
+            margin-left: 20px;
+                .quienesSomos {
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                }
+                .quienesSomosText {
+                    text-align: center;
+                    justify-content: center;
+                    padding-top: 30px;
+                }
+        }
+}
+
+.informacion2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffddfd;
+    border-radius: 100%;
+        .imagenInfo2 {
+            img {
+                width: 300px;
+                height: auto;
+                border-radius: 10%;
+            }
+        }
+        .textoInfo2 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 65%;
+            margin-right: 20px;
+                .quienesSomos2 {
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                }
+                .quienesSomosText2 {
+                    text-align: center;
+                    justify-content: center;
+                    padding-top: 30px;
+                }
+        }
 }
 
 .breadCrumbs {

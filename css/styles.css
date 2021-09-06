@@ -22,7 +22,7 @@ body {
     color: #f3c2cb;
     transition: linear 0.3s; }
 
-#activo {
+.activo {
   color: #f3c2cb; }
 
 header {
@@ -178,27 +178,80 @@ footer {
     color: #f3c2cb; }
 
 /* PRODUCTOS.html */
-.productosRopaContainer {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center; }
-
-.productosRopaContainerNiños {
+.productosNiños {
+  width: 100%;
+  margin: auto;
   justify-content: center;
   text-align: center;
-  border-top: solid;
-  border-width: 1px; }
-  .productosRopaContainerNiños .cards {
-    padding-top: 20px; }
+  border-top: black solid 1px; }
+  .productosNiños .card {
+    margin: 10px; }
+    .productosNiños .card .btn {
+      background-color: green;
+      border: none; }
+      .productosNiños .card .btn:hover {
+        transition: linear 0.2s;
+        background-color: #02ac02; }
+    .productosNiños .card p {
+      font-weight: bold;
+      font-size: 18px; }
 
-.Ropa-Para-Niños {
-  font-size: 1.7rem;
-  padding-top: 25px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  color: #8a0883;
-  text-align: center; }
+.ropaParaNiños {
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  color: #cc0505;
+  font-weight: bold; }
+
+.productosNiñas {
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  border-top: black solid 1px; }
+  .productosNiñas .card {
+    margin: 10px; }
+    .productosNiñas .card .btn {
+      background-color: green;
+      border: none; }
+      .productosNiñas .card .btn:hover {
+        transition: linear 0.2s;
+        background-color: #02ac02; }
+    .productosNiñas .card p {
+      font-weight: bold;
+      font-size: 18px; }
+
+.ropaParaNiñas {
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  color: #cc05c2;
+  font-weight: bold; }
+
+.productosBebes {
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  border-top: black solid 1px; }
+  .productosBebes .card {
+    margin: 10px; }
+    .productosBebes .card .btn {
+      background-color: green;
+      border: none; }
+      .productosBebes .card .btn:hover {
+        transition: linear 0.2s;
+        background-color: #02ac02; }
+    .productosBebes .card p {
+      font-weight: bold;
+      font-size: 18px; }
+
+.ropaParaBebes {
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  color: #1905cc;
+  font-weight: bold; }
 
 /* CONTACTO */
 input[type=text], select, textarea {
@@ -242,23 +295,76 @@ input[type=submit]:hover {
   .iframeContainer h1 {
     padding-bottom: 25px; }
 
+@media (max-width: 600px) {
+  iframe {
+    width: 95%; } }
+
 .iframeContainer p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold; }
 
 /* MÁS */
-.galeria {
-  padding-top: 30px;
-  justify-content: center;
-  align-content: center;
+.informacion1 {
+  display: flex;
   width: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 200px);
-  grid-template-rows: repeat(4, 200px); }
-  .galeria div img {
-    width: 100%;
-    padding: 10px; }
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  justify-content: center;
+  text-align: center;
+  background-color: #f3c2cb;
+  border-radius: 100%; }
+  .informacion1 .imagenInfo1 img {
+    width: 300px;
+    height: auto;
+    border-radius: 10%; }
+  .informacion1 .textoInfo1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 65%;
+    margin-left: 20px; }
+    .informacion1 .textoInfo1 .quienesSomos {
+      font-size: 40px;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+      justify-content: center; }
+    .informacion1 .textoInfo1 .quienesSomosText {
+      text-align: center;
+      justify-content: center;
+      padding-top: 30px; }
+
+.informacion2 {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffddfd;
+  border-radius: 100%; }
+  .informacion2 .imagenInfo2 img {
+    width: 300px;
+    height: auto;
+    border-radius: 10%; }
+  .informacion2 .textoInfo2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 65%;
+    margin-right: 20px; }
+    .informacion2 .textoInfo2 .quienesSomos2 {
+      font-size: 40px;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+      justify-content: center; }
+    .informacion2 .textoInfo2 .quienesSomosText2 {
+      text-align: center;
+      justify-content: center;
+      padding-top: 30px; }
 
 .breadCrumbs {
   display: inline; }
