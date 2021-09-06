@@ -438,6 +438,7 @@ input[type=submit]:hover {
                     text-align: center;
                     justify-content: center;
                     padding-top: 30px;
+                    font-weight: bold;
                 }
         }
 }
@@ -465,17 +466,57 @@ input[type=submit]:hover {
             flex-wrap: wrap;
             width: 65%;
             margin-right: 20px;
-                .quienesSomos2 {
+                .comoTrabajamos {
                     font-size: 40px;
                     font-weight: bold;
                     color: black;
                     text-align: center;
                     justify-content: center;
                 }
-                .quienesSomosText2 {
+                .comoTrabajamosText {
                     text-align: center;
                     justify-content: center;
                     padding-top: 30px;
+                    font-weight: bold;
+                }
+        }
+}
+
+.informacion3 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(100, 235, 223);
+    border-radius: 100%;
+        .imagenInfo3 {
+            img {
+                width: 300px;
+                height: auto;
+                border-radius: 10%;
+            }
+        }
+        .textoInfo3 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 65%;
+            margin-left: 20px;
+                .porqueElegirnos {
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                }
+                .porqueElegirnosText {
+                    text-align: center;
+                    justify-content: center;
+                    padding-top: 30px;
+                    font-weight: bold;
                 }
         }
 }

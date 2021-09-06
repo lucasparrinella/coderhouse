@@ -333,7 +333,8 @@ input[type=submit]:hover {
     .informacion1 .textoInfo1 .quienesSomosText {
       text-align: center;
       justify-content: center;
-      padding-top: 30px; }
+      padding-top: 30px;
+      font-weight: bold; }
 
 .informacion2 {
   display: flex;
@@ -355,16 +356,49 @@ input[type=submit]:hover {
     flex-wrap: wrap;
     width: 65%;
     margin-right: 20px; }
-    .informacion2 .textoInfo2 .quienesSomos2 {
+    .informacion2 .textoInfo2 .comoTrabajamos {
       font-size: 40px;
       font-weight: bold;
       color: black;
       text-align: center;
       justify-content: center; }
-    .informacion2 .textoInfo2 .quienesSomosText2 {
+    .informacion2 .textoInfo2 .comoTrabajamosText {
       text-align: center;
       justify-content: center;
-      padding-top: 30px; }
+      padding-top: 30px;
+      font-weight: bold; }
+
+.informacion3 {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  justify-content: center;
+  text-align: center;
+  background-color: #64ebdf;
+  border-radius: 100%; }
+  .informacion3 .imagenInfo3 img {
+    width: 300px;
+    height: auto;
+    border-radius: 10%; }
+  .informacion3 .textoInfo3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 65%;
+    margin-left: 20px; }
+    .informacion3 .textoInfo3 .porqueElegirnos {
+      font-size: 40px;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+      justify-content: center; }
+    .informacion3 .textoInfo3 .porqueElegirnosText {
+      text-align: center;
+      justify-content: center;
+      padding-top: 30px;
+      font-weight: bold; }
 
 .breadCrumbs {
   display: inline; }
